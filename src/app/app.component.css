@@ -1,0 +1,26 @@
+.grid-container {
+  margin: 20px;
+}
+.example-card {
+  margin: 10px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+.example-card mat-card-subtitle {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+table {
+  width: 100%;
+}
+th {
+  font-size: 25px;
+  color: black;
+}
+body {
+  background: azure !important;
+}
