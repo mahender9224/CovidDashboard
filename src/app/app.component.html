@@ -1,6 +1,6 @@
 <div class="grid-container">
   <h1 style="text-align: center;">Covid19 Dashboard</h1>
-  <div style="display: flex; justify-content: center;">
+  <div style="display: flex; justify-content: center; flex-wrap: wrap;">
     <mat-card class="example-card confirmedcard" style="background: #fdecec; color: #f18282;">
       <mat-card-title>{{total?.confirmed | number}}</mat-card-title>
       <mat-divider inset></mat-divider>
@@ -23,8 +23,8 @@
       </mat-card-footer>
     </mat-card>
   </div>
- <section style="display: flex;">
-  <mat-card  style="width: 50%;">
+ <section style="display: flex; flex-wrap: wrap;">
+  <mat-card  style="width: fit-content; min-width: 450px;">
     <mat-card-title>State Wise Data</mat-card-title>
     <mat-form-field appearance="standard">
       <mat-label>Filter</mat-label>
@@ -72,7 +72,7 @@
     </div>
 
   </mat-card>
-  <mat-card *ngIf="state" style="width: 50%;">
+  <mat-card *ngIf="state" style="width: fit-content;  min-width: 450px;">
     <mat-card-title>District Wise Data</mat-card-title>
     <mat-form-field appearance="standard">
       <mat-label>Filter</mat-label>
@@ -122,8 +122,3 @@
   </mat-card>
  </section>
 </div>
-
-
-
-
-
